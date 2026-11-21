@@ -43,6 +43,10 @@
       color: #505050;
     }
 
+    header > .bio {
+      margin-block-start: 1rem;
+    }
+
     dl {
       display: grid;
       grid-template-columns: max-content minmax(0, 1fr);
@@ -59,12 +63,8 @@
       list-style: none;
     }
 
-    .emails {
+    .email {
       overflow-wrap: anywhere;
-    }
-
-    .emails li + li {
-      margin-block-start: 0.2rem;
     }
 
     a {
@@ -129,20 +129,12 @@
     <header>
       <h1>Fuqing Bie</h1>
       <p>PhD student, Beijing University of Posts and Telecommunications</p>
+      <p class="bio">I am a PhD student at Beijing University of Posts and Telecommunications (BUPT), with research interests in reinforcement learning, agentic RL, and real-world applications of large language models (LLMs). My work focuses on safety-critical decision-making, reward modeling, and the practical deployment of intelligent agents in complex environments.</p>
       <dl>
-        <dt>Joined</dt>
-        <dd><time datetime="2024-05">May 2024</time></dd>
         <dt>Names</dt>
         <dd>Fuqing Bie (Preferred)</dd>
         <dt>Emails</dt>
-        <dd>
-          <ul class="emails" role="list">
-            <li><a href="mailto:biefuqing@bupt.edu.cn">biefuqing@bupt.edu.cn</a> <span class="email-status">(Confirmed)(Preferred)</span></li>
-            <li><a href="mailto:biehenry9@gmail.com">biehenry9@gmail.com</a> <span class="email-status">(Confirmed)</span></li>
-            <li><a href="mailto:strivebfq@163.com">strivebfq@163.com</a> <span class="email-status">(Confirmed)</span></li>
-            <li><a href="mailto:fightinghenry@gmail.co">fightinghenry@gmail.co</a></li>
-          </ul>
-        </dd>
+        <dd class="email"><a href="mailto:biefuqing@bupt.edu.cn">biefuqing@bupt.edu.cn</a> <span class="email-status">(Confirmed)(Preferred)</span></dd>
       </dl>
     </header>
 
